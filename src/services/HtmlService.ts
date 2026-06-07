@@ -10,7 +10,7 @@ export default class HtmlService {
           <h1>Detalhes do Clima</h1>
           <p><strong>Temperatura:</strong> ${data.temp}°C</p>
           <p><strong>Umidade:</strong> ${data.humidity}%</p>
-          <p><strong>Vento:</strong> ${data.wind_speedy} km/h</p>
+          <p><strong>Vento:</strong> ${data.wind_speedy} </p>
           <p><strong>Descrição:</strong> ${data.description}</p>
         `;
       return {

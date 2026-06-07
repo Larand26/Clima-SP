@@ -3,6 +3,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const config = {
+  app: {
+    mode: process.env.APP_MODE || "production",
+    cronShedule: process.env.CRON_SCHEDULE || "0 5 * * *", // Padrão: todos os dias às 5h da manhã
+  },
   apiClimate: {
     url: process.env.URL_API_CLIMATE || "",
   },

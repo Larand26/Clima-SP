@@ -2,6 +2,7 @@ import type { iClimateDetails } from "./interfaces/interfaces.js";
 
 import ClimateController from "./controllers/ClimateController.js";
 import HtmlController from "./controllers/HtmlController.js";
+import EmailController from "./controllers/EmailController.js";
 
 export default class App {
   static async start() {
@@ -14,5 +15,9 @@ export default class App {
     );
     console.log(htmlResponse);
     // Envia o email
+    const emailResponse = await EmailController.sendEmail(
+      htmlResponse.data as string,
+    );
+    console.log(emailResponse);
   }
 }

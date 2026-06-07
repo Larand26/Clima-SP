@@ -40,6 +40,20 @@ O projeto foi criado para simplificar o início do dia dos usuários, consolidan
 - Uma chave de API de algum serviço de clima (ex: OpenWeatherMap)
 - Credenciais de um servidor SMTP (Gmail, SendGrid, Mailtrap, etc.)
 
+### .Env
+
+URL_API_CLIMATE=https://api.hgbrasil.com/weather
+
+EMAIL_HOST=seu_host
+
+EMAIL_PORT=sua_porta
+
+EMAIL_USER=seu_email
+
+EMAIL_PASS=sua_senha
+
+EMAIL_TO=seu_email
+
 ### Passo a Passo
 
 ```bash
